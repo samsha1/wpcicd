@@ -20,8 +20,7 @@ services:
        - ./wpdata:/var/www/html
      ports:
        - "8000:80"
-     labels:
-       name: "wordpress_test"
+     container_name: wordpress_test
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
