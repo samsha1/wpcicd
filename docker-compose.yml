@@ -17,7 +17,7 @@ services:
        - db
      image: wordpress:latest
      volumes:
-       - ./wpdata:/var/www/html
+       - .:/var/www/html
      ports:
        - "8000:80"
      container_name: wordpress_test
